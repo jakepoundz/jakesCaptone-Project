@@ -17,7 +17,7 @@ const SocialShareButtons = ({ workoutLogs }) => {
   const shareMessage = `I've completed ${totalWorkouts} workouts and lifted a total of ${totalWeightLifted} lbs! Check out my progress!`;
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex bg-white space-x-4">
       <FacebookShareButton
         url={window.location.href}
         quote={shareMessage}

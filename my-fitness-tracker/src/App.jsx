@@ -5,7 +5,7 @@ import WorkoutHistory from './components/WorkoutHistory';
 import ProgressChart from './components/ProgressChart'; // Import the ProgressChart component
 import SocialShareButtons from './components/SocialShareButtons';
 
-function App() {
+function App  ()  {
   const [exercises, setExercises] = useState([]);
   const [workoutLogs, setWorkoutLogs] = useState([]);
   const [muscleGroups, setMuscleGroups] = useState([]); // List of muscle groups for dropdown
@@ -109,7 +109,7 @@ function App() {
       {/* Conditionally render ProgressChart if there are workout logs */}
       {workoutLogs.length > 0 && <ProgressChart workoutLogs={workoutLogs} />}
 
-      {/* Place Social Share Buttons near progress */}
+      {}
       <SocialShareButtons workoutLogs={workoutLogs} />
     </div>
     </div>
